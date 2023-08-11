@@ -4,6 +4,7 @@ import string
 import math
 
 """
+Legitamte examples of regular expressions of this type found in the snort community rules file
 #Line 2334 
 filename=[^\n]*\x2eemf
 #Line 2341 
