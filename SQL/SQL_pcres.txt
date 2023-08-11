@@ -1,0 +1,16 @@
+#\x2ertf([\?\x5c\x2f]|$)
+#\x2edoc([\?\x5c\x2f]|$)
+#\x2epjpeg([\?\x5c\x2f]|$)
+#agent_(win|lin|mac)_helper\.jar$
+#^User-Agent\x3a[^\r\n]*android
+#^Authorization\x3a(\s*|\s*\r?\n\s+)Basic\s+YWRtaW46cGFzc3dvcmQ
+#^Authorization\x3A\s*Basic\s+TERBUF9Bbm9ueW1vdXM6TGRhcFBhc3N3b3JkXzE=
+Server\x5bpath\x5d=(https?|ftps?|php)
+#\x2f[a-z0-9]+\.php\?php\x3dreceipt$
+#\x2epaq8o([\?\x5c\x2f]|$)
+#\/anony\/(jpgview\.htm|mjpeg\.cgi|view2\.cgi|mjpg\.cgi)
+#b2inc=(https?|ftps?|php)
+#<a\x3a\s*propfind.*?xmlns\x3a\s*a=[\x21\x22]?DAV[\x21\x22]?
+#(%(25)?24|\x24)(%(25)?7b|\x7b)lower(%(25)?3a|\x3a)
+#^Accept-Encoding:\x20*[^\r\n]*\x2c[\x20\x09]*\x2c
+#\x24\x7b(jndi|[^\x7d\x80-\xff]*?\x24\x7b[^\x7d]*?\x3a[^\x7d]*?\x7d)

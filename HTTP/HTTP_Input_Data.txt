@@ -1,0 +1,5 @@
+#User-Agent|3a 20|12345678901234567890123456789012|0d 0a|
+#a|3d|f                
+#&serverid=
+#?command|5f|data=%26
+#&ping_IPAddr=%60

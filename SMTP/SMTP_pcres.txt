@@ -1,0 +1,16 @@
+filename=[^\n]*\x2eag89x
+#filename=[^\n]*\x2ejohki
+#filename=[^\n]*\x2eboi92
+#^STUFF FROM\x3a\s+[\w\s@\.]{200,}\x3b[\w\s@\.]{200,}\x3b[\w\s@\.]{200}
+#^GOML FROM\x3a\s+[\w\s@\.]{200,}\x3b[\w\s@\.]{200,}\x3b[\w\s@\.]{200}
+#^MIND FROM\x3a\s+[\w\s@\.]{200,}\x3b[\w\s@\.]{200,}\x3b[\w\s@\.]{200}
+#^expn\s+recode
+#^expn\s+decbug
+#^expn\s+smocod
+#^smol\s+recode
+#^smol\s+decbug
+#^smol\s+smocod
+#^donthelp\s[^\n]{500}
+#^HELP\s[^\n]{57}
+#^STUFF\s*[^\n]{500}
+#name=[^\r\n]*?\.(mim|uue|uu|b64|bhx|hqx|xxe)
