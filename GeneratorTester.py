@@ -36,7 +36,7 @@ if (len(reps) != len(patterns)):
 
 for num in range(len(patterns)):
     
-    pattern_module = importlib.import_module("SMTP." + patterns[num])
+    pattern_module = importlib.import_module("HTTP." + patterns[num])
     seed = pattern_module.generate_rand()
     regex = pattern_module.regex(seed)
 

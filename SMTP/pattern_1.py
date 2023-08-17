@@ -4,7 +4,7 @@ import string
 import math
 
 """
-Legitamte examples of regular expressions of this type found in the snort community rules file
+Legitimate examples of regular expressions of this type found in the snort community rules file
 #Line 2334 
 filename=[^\n]*\x2eemf
 #Line 2341 
@@ -67,7 +67,7 @@ def input(rand_var, error_num):
         content += random.choice(string.ascii_letters) 
     
     if (error_num == 0):
-        content += "\n"
+        content += "|0A|"
     content += "|2e|"
 
     if (error_num == 1):

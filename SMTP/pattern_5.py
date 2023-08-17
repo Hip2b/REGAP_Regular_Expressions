@@ -40,7 +40,7 @@ def input(rand_vars, error_num):
         space_num = abs(1 - space_num)
     content += space_or_not[space_num]
     if(error_num == 2):
-        content += "\n"
+        content += "|0A|"
     if(error_num == 3):
         num_chars -= 5
     for x in range(num_chars):

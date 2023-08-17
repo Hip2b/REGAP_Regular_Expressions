@@ -44,7 +44,7 @@ def input(rand_vars, error_num):
         for b in range(random.randint(0,5)):
             content += random.choice(rand_chars)
         if (error_num == 1 and x == splice):
-            content += "\n"
+            content += "|0A|"
         content += "<"
     
     if(error_num == 2):

@@ -1,0 +1,1 @@
+\x24{(\x24{(upper|lower):j}|j)(\x24{(upper|lower):n}|n)(\x24{(upper|lower):d}|d)(\x24{(upper|lower):i}|i)(\x24{(upper|lower)::}|:)
