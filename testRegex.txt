@@ -1,1 +1,10 @@
-\x24{(\x24{(upper|lower):j}|j)(\x24{(upper|lower):n}|n)(\x24{(upper|lower):d}|d)(\x24{(upper|lower):i}|i)(\x24{(upper|lower)::}|:)
+filename=[^\n]*\x2erbdl
+filename=[^\n]*\x2etaur
+filename=[^\n]*\x2eqxexm
+filename=[^\n]*\x2epab
+filename=[^\n]*\x2effmfo
+^ACKP FROM\x3a\s*[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<[^\n<]*<
+^UYMF FROM\x3a\s+[\w\s@\.]{200,}\x3b[\w\s@\.]{200,}\x3b[\w\s@\.]{200}
+^htrd\s+pbamju
+^FHCF\s[^\n]{400}
+^\s*Content-Dczthu-Cvhbhvp\s*\x3A\s*[^\r\n]{300}

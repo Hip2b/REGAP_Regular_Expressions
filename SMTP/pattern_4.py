@@ -45,3 +45,6 @@ def input(rand_vars, error_num):
     content += rand_vars[1]
 
     return content
+
+def scale():
+    return 4

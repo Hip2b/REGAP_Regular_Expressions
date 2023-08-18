@@ -80,3 +80,6 @@ def input(rand_var, error_num):
         content += "|3a|"
     
     return content
+
+def scale():
+    return 9

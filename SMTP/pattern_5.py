@@ -48,3 +48,5 @@ def input(rand_vars, error_num):
 
     return content
 
+def scale():
+    return 5

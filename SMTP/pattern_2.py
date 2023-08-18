@@ -51,3 +51,6 @@ def input(rand_vars, error_num):
         content = random.choice(rand_chars) + " " + content
     
     return content
+
+def scale():
+    return 5

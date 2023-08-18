@@ -78,3 +78,6 @@ def input(rand_var, error_num):
     content += RandomFunctions.word_generate(random.randint(0,5), "lower")     
 
     return content
+
+def scale():
+    return 20

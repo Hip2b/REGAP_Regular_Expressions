@@ -24,9 +24,11 @@ except:
     exit()
     
 """
-def word_generate(num_chars, case = ""):
+def word_generate(num_chars, case = "", selection = -1):
     word = ""
-    if (case == "lower"):
+    if (not selection == -1):
+        alphabet = selection
+    elif (case == "lower"):
         alphabet = string.ascii_lowercase
     elif (case == "upper"):
         alphabet = string.ascii_uppercase
@@ -34,6 +36,12 @@ def word_generate(num_chars, case = ""):
         word += random.choice(string.ascii_uppercase)
         alphabet = string.ascii_lowercase
         num_chars -= 1
+    elif(case == "num_letter"):
+        alphabet = string.ascii_letters
+        alphabet += "1234567890"
+    elif(case == "num_lower"):
+        alphabet = string.ascii_lowercase
+        alphabet += "1234567890"
     else:
         return "invalid u silly"
 
