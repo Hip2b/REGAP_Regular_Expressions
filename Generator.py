@@ -5,8 +5,9 @@ import sys
 category_type = "SMTP"
 generation_type = ""
 total_regs = 0
-file_rules = 10
+file_rules = 0
 input_rate = 5
+num_patterns = 0
 
 regex_text = "testRegex.txt"
 input_text = "testInput.txt"
@@ -43,17 +44,18 @@ for opt, arg in opts:
 regex = open(regex_text, "w")
 input = open(input_text, "w")
 
-"""
-SMTP_patterns=[["pattern_1",3],["pattern_2",5],["pattern_3",1]]
-default_num_rules = ....
-scaling_factor = repetitions/default_num_rules
-"""
-if (category_type == "SMTP"):
-    file_rules = 42
-if (category_type == "HTTP"):
-    file_rules = 20
+arbitrary_patterns_checked = 20
+for x in range(arbitrary_patterns_checked):
+    try:
+        pattern_module = importlib.import_module(str(category_type) + ".pattern_" + str(x + 1))
+    except:
+        #whooops
+        continue
 
-for x in range(6):
+    num_patterns += 1
+    file_rules += pattern_module.scale()    
+
+for x in range(num_patterns):
     pattern_module = importlib.import_module(str(category_type) + ".pattern_" + str(x + 1))
 
     reps_decimal = total_regs * (pattern_module.scale()/file_rules)

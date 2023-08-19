@@ -26,22 +26,25 @@ except:
 """
 def word_generate(num_chars, case = "", selection = -1):
     word = ""
+    alphabet = ""
     if (not selection == -1):
-        alphabet = selection
-    elif (case == "lower"):
-        alphabet = string.ascii_lowercase
+        alphabet += selection
+    if (case == "lower"):
+        alphabet += string.ascii_lowercase
     elif (case == "upper"):
-        alphabet = string.ascii_uppercase
+        alphabet += string.ascii_uppercase
     elif (case == "start_upper"):
         word += random.choice(string.ascii_uppercase)
-        alphabet = string.ascii_lowercase
+        alphabet += string.ascii_lowercase
         num_chars -= 1
     elif(case == "num_letter"):
-        alphabet = string.ascii_letters
+        alphabet += string.ascii_letters
         alphabet += "1234567890"
     elif(case == "num_lower"):
-        alphabet = string.ascii_lowercase
+        alphabet += string.ascii_lowercase
         alphabet += "1234567890"
+    elif(case == "letters"):
+        alphabet += string.ascii_letters
     else:
         return "invalid u silly"
 
