@@ -5,8 +5,8 @@ import re
 import modules.InputConverter as InputConverter
 
 
-regex_file = ""
-input_file = ""
+regex_file = "testRegex.txt"
+input_file = "testInput.txt"
 
 try:
     opts, args = getopt.getopt(sys.argv[1:], ":", ["regex=", "input="])  

@@ -1,6 +1,7 @@
 import getopt
 import importlib
 import sys
+import glob
 
 category_type = "SMTP"
 generation_type = ""
@@ -44,20 +45,14 @@ for opt, arg in opts:
 regex = open(regex_text, "w")
 input = open(input_text, "w")
 
-arbitrary_patterns_checked = 20
-for x in range(arbitrary_patterns_checked):
-    try:
-        pattern_module = importlib.import_module(str(category_type) + ".pattern_" + str(x + 1))
-    except:
-        #whooops
-        continue
-
-    num_patterns += 1
+modules = []
+for pattern in glob.glob((str(category_type) + "/pattern_*.py")):
+    pattern = pattern.replace("\\", ".")
+    pattern_module = importlib.import_module(pattern[0:-3])
+    modules.append(pattern_module)
     file_rules += pattern_module.scale()    
 
-for x in range(num_patterns):
-    pattern_module = importlib.import_module(str(category_type) + ".pattern_" + str(x + 1))
-
+for pattern_module in modules:
     reps_decimal = total_regs * (pattern_module.scale()/file_rules)
     reps = int(round(reps_decimal, 0))
     for n in range(reps):

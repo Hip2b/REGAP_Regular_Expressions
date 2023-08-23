@@ -55,7 +55,10 @@ def regex(rand_var):
     base += rand_var
     
     return base
-
+"""
+for x in range(100);
+    input(rand_var, x)
+"""
 def input(rand_var, error_num):
     content = ""
     error_num = math.fmod(error_num - 1, 2)

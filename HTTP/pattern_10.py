@@ -28,13 +28,14 @@ def regex(rand_var):
     base += r"[a-z\d\x2f\x2b\x3d]{" + str(rand_var[2])
     if (len(rand_var) == 4):
         base += "," + str(rand_var[3])
+    base += r"}"
     base += rand_var[1]
-    
+
     return base
 
 def input(rand_var, error_num):
     content = ""
-    error_num = math.fmod(error_num - 1, 2)
+    error_num = math.fmod(error_num - 1, 1)
 
     param_one = rand_var[2]
     param_two = param_one
@@ -45,7 +46,7 @@ def input(rand_var, error_num):
         param_one = int(rand_var[2]/3)
         param_two = int(rand_var[2]/2)
     
-    if (error_num == 0):
+    if (error_num == 1):
         param_one = param_two + 5
         param_two = param_two + 20
 

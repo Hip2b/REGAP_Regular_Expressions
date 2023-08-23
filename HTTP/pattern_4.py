@@ -4,6 +4,11 @@ import string
 import math
 
 """
+Line 2777 pcre:
+"/\/(?:[^\/]+?\/[a-z]{2,24}|closest\/[a-z0-9]{15,25})\.php\?[ab10]+=[ab10]+&[ab10]+=[ab10]+$/" '
+
+Line 2583 pcre:"/\/elections\.php\?([a-z0-9]+\x3d\d{1,3}\&){9}[a-z0-9]+\x3d\d{1,3}$/" 
+
 Line 2781 pcre:
 "/\/(?:[^\/]+?\/[a-z]{2,24}|closest\/[a-z0-9]{15,25})\.php\?[ab10]+=[ab10]+&[ab10]+=[ab10]+&[ab10]+=[ab10]+&[ab10]+=[ab10]+&[ab10]+=[ab10]+$/" 
 """
