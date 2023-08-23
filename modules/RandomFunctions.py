@@ -24,6 +24,9 @@ except:
     exit()
     
 """
+def word_gen_2():
+    word = ""
+
 def word_generate(num_chars, case = "", selection = -1):
     word = ""
     alphabet = ""

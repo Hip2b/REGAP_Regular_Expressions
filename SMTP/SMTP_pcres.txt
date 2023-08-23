@@ -10,7 +10,7 @@ filename=[^\n]*\x2eag89x
 #^smol\s+recode
 #^smol\s+decbug
 #^smol\s+smocod
-#^donthelp\s[^\n]{500}
+#^fhumynameisbob\s[^\n]{500}
 #^HELP\s[^\n]{57}
 #^STUFF\s*[^\n]{500}
 #name=[^\r\n]*?\.(mim|uue|uu|b64|bhx|hqx|xxe)

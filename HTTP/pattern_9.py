@@ -73,12 +73,8 @@ def input(rand_var, error_num):
         selection = ["|60|","|3b|", "|7c|"]
     elif(picker == 2):
         selection = ["|3c 28|", "|3e 28|","|24 28|"]
-    elif(picker > 2 and picker < 6):
-        selection = [r"%60", r"%3b", r"%7c"]
-    elif (picker == 6):
-        selection = ["%26", r"%26extra", "%26  "]
     else:
-        selection = [r"%3c%28", r"%3e%28", r"%24%28"]
+        selection = [r"%60", r"%3b", r"%7c", "%26", r"%3c%28", r"%3e%28", r"%24%28"]
     content += selection[random.randint(0,2)]
 
     return content
