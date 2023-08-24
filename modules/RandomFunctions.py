@@ -24,8 +24,34 @@ except:
     exit()
     
 """
-def word_gen_2():
+def word_gen(min_chars, max_chars = -1, selection = "a-z"):
     word = ""
+    alphabet = ""
+    if (max_chars == -1):
+        max_chars = min_chars
+    num_chars = random.randint(min_chars, max_chars)
+    
+    for index in range(len(selection)):
+        char = selection[index]
+
+        if (index >= 2 and selection[index - 2] == '/'):
+            alphabet = alphabet[:-2]
+            char_val = int(str(selection[index - 1]) + str(char),16)
+            alphabet += chr(char_val)
+            continue
+        if (char == '-' and index > 0 and index < len(selection) - 1):
+            start = ord(selection[index - 1]) + 1
+            end = ord(selection[index + 1])
+            for x in range(end - start):
+                alphabet += chr(start + x)
+            continue
+        
+        alphabet += char
+    for x in range(num_chars):
+        word += random.choice(alphabet)
+
+    return word
+
 
 def word_generate(num_chars, case = "", selection = -1):
     word = ""

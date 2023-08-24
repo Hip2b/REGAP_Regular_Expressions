@@ -4,11 +4,11 @@ import string
 import math
 
 """
-Line 2900 pcre:"/^[a-z\d\x2f\+\x3d]{10,98}$/i" 
-Line 2907 pcre:"/^[a-z\d\x2b\x2f\x3d]{48,256}$/i" 
-Line 3110 pcre:"/[a-z\d\x2f\x2b\x3d]{100}/AGi" 
+Line 2901 pcre:"/^[a-z\d\x2f\+\x3d]{10,98}$/i" 
+Line 2908 pcre:"/^[a-z\d\x2b\x2f\x3d]{48,256}$/i" 
 Line 3111 pcre:"/[a-z\d\x2f\x2b\x3d]{100}/AGi" 
-Line 3161 pcre:"/[a-z\d\x2f\x2b\x3d]{100,300}/i" 
+Line 3112 pcre:"/[a-z\d\x2f\x2b\x3d]{100}/AGi" 
+Line 3162 pcre:"/[a-z\d\x2f\x2b\x3d]{100,300}/i" 
 """
 
 def generate_rand():

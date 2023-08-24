@@ -4,16 +4,22 @@ import string
 import math
 
 """
-Line 3468 pcre:"/(^|&)host_name=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28|%60|%3b|%7c|%26|%3c%28|%3e%28|%24%28)/im" 
-Line 3456 pcre:"/(^|&)ping_IPAddr=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28|%60|%3b|%7c|%26|%3c%28|%3e%28|%24%28)/im" 
-Line 3530 pcre:"/(^|&)pingAddr=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28|%60|%3b|%7c|%26|%3c%28|%3e%28|%24%28)/im" 
-Line 3468 pcre:"/(^|&)host_name=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28|%60|%3b|%7c|%26|%3c%28|%3e%28|%24%28)/im" 
-Line 3666 pcre:"/(^|&)url=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28|%60|%3b|%7c|%26|%3c%28|%3e%28|%24%28)/im" 
-Line 3662 pcre:"/(^|&)path=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28|%60|%3b|%7c|%26|%3c%28|%3e%28|%24%28)/im" 
-Line 3622 pcre:"/(^|&)SMB(\x5f|%5f)(LOCATION|USERNAME)=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28|%60|%3b|%7c|%26|%3c%28|%3e%28|%24%28)/im" 
-Line 3617 pcre:"/(^|&)ping(\x5f|%5f)ip=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28|%60|%3b|%7c|%26|%3c%28|%3e%28|%24%28)/im" 
 
-Line 3438 pcre:"/(^|&)arg=[^&]*?([\x60\x3b\x7c]|\x24\x28|%60|%3b|%7c|%26|%24%28)/im"  
+defenitly these:
+Line 3457 pcre:"/(^|&)ping_IPAddr=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28|%60|%3b|%7c|%26|%3c%28|%3e%28|%24%28)/im" 
+Line 3469 pcre:"/(^|&)host_name=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28|%60|%3b|%7c|%26|%3c%28|%3e%28|%24%28)/im" 
+Line 3531 pcre:"/(^|&)pingAddr=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28|%60|%3b|%7c|%26|%3c%28|%3e%28|%24%28)/im" 
+Line 3618 pcre:"/(^|&)ping(\x5f|%5f)ip=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28|%60|%3b|%7c|%26|%3c%28|%3e%28|%24%28)/im" 
+Line 3623 pcre:"/(^|&)SMB(\x5f|%5f)(LOCATION|USERNAME)=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28|%60|%3b|%7c|%26|%3c%28|%3e%28|%24%28)/im" 
+Line 3663 pcre:"/(^|&)path=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28|%60|%3b|%7c|%26|%3c%28|%3e%28|%24%28)/im" 
+Line 3667 pcre:"/(^|&)url=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28|%60|%3b|%7c|%26|%3c%28|%3e%28|%24%28)/im" 
+Line 3684 pcre:"/(^|&)command(\x5f|%5f)data=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28|%60|%3b|%7c|%26|%3c%28|%3e%28|%24%28)/im" 
+
+
+kind of this one:
+Line 3439 pcre:"/(^|&)arg=[^&]*?([\x60\x3b\x7c]|\x24\x28|%60|%3b|%7c|%26|%24%28)/im" 
+Line 3524 pcre:"/^Host\x3A[^\x0a]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28|%60|%3b|%7c|%26|%3c%28|%3e%28|%24%28)/im" 
+Line 3603 pcre:"/(^|&)ping(\x5f|%5f)(ip|size|times)=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28|%60|%3b|%7c|%26|%3c%28|%3e%28|%24%28)/im" 
 """
 
 def generate_rand():

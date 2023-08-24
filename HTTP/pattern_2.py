@@ -5,12 +5,9 @@ import math
 
 """
 Legitimate examples of regular expressions of this type found in the snort community rules file
-Line 2673 pcre:
-"/\/jorg\.html$/" 
-Line 2674 pcre:
-"/\/jlnp\.html$/" 
-Line 2675 pcre:
-"/\/jovf\.html$/" 
+Line 2674 pcre:"/\/jorg\.html$/" 
+Line 2675 pcre:"/\/jlnp\.html$/" 
+Line 2676 pcre:"/\/jovf\.html$/" 
 """
 
 def generate_rand():

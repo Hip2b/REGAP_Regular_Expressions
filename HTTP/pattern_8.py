@@ -4,16 +4,20 @@ import string
 import math
 
 """
-Line 3470 pcre:"/[?&]host_name=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28)/i" 
-Line 3458 pcre:"/[?&]ping_IPAddr=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28)/i"
-Line 3528 pcre:"/[?&]pingAddr=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28)/i" 
-Line 3470 pcre:"/[?&]host_name=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28)/i"
-Line 3664 pcre:"/[?&]url=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28)/i" 
-Line 3660 pcre:"/[?&]path=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28)/i" 
-Line 3620 pcre:"/[?&]SMB_(LOCATION|USERNAME)=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28)/i" 
-Line 3615 pcre:"/[?&]ping_ip=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28)/i" 
 
-Line 3436 pcre:"/[?&]arg=[^&]*?([\x60\x3b\x7c]|\x24\x28)/i" 
+Line 3459 pcre:"/[?&]ping_IPAddr=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28)/i" 
+Line 3471 pcre:"/[?&]host_name=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28)/i" 
+Line 3529 pcre:"/[?&]pingAddr=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28)/i" 
+Line 3616 pcre:"/[?&]ping_ip=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28)/i" 
+Line 3621 pcre:"/[?&]SMB_(LOCATION|USERNAME)=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28)/i" 
+Line 3661 pcre:"/[?&]path=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28)/i" 
+Line 3665 pcre:"/[?&]url=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28)/i" 
+Line 3682 pcre:"/[?&]command_data=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28)/i" 
+
+
+kind of :
+Line 3606 pcre:"/[?&]ping_(ip|size|times)=[^&]*?([\x60\x3b\x7c]|[\x3c\x3e\x24]\x28)/i" 
+Line 3437 pcre:"/[?&]arg=[^&]*?([\x60\x3b\x7c]|\x24\x28)/i" 
 """
 def generate_rand():
     ret_arr = [RandomFunctions.word_generate(10, "letters", "_")]

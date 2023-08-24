@@ -4,9 +4,9 @@ import string
 import math
 
 """
-Line 3752 pcre:"/\x2ftahw\x3f[A-F0-9]{3,84}$/" 
-Line 3753 pcre:"/\x2fkhc\x3f[A-F0-9]{3,84}$/" 
-Line 3754 pcre:"/\x2fpser\x3f[A-F0-9]{3,84}(BBZ|BBY)/" 
+Line 3753 pcre:"/\x2ftahw\x3f[A-F0-9]{3,84}$/" 
+Line 3754 pcre:"/\x2fkhc\x3f[A-F0-9]{3,84}$/" 
+Line 3755 pcre:"/\x2fpser\x3f[A-F0-9]{3,84}(BBZ|BBY)/" 
 """
 
 def generate_rand():

@@ -20,7 +20,7 @@ def hex_conversion(input):
                 
                 for hex in hex_arr:
                     if (len(hex) != 2):
-                        print("invalid syntax for hexadecimals in input")
+                        print("invalid syntax for hexadecimals in input |0A 2f|")
                         exit()
                     else:
                         char = chr(int(hex,16))
@@ -30,6 +30,7 @@ def hex_conversion(input):
                 decoded += input[i]
     
     return decoded
+
 """
 
 input_file = -1

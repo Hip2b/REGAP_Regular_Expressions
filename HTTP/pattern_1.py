@@ -4,25 +4,17 @@ import string
 import math
 
 """
+
 Legitimate examples of regular expressions of this type found in the snort community rules file
-Line 3977 pcre:
-"/(%(25)?24|\x24)(%(25)?7b|\x7b)jndi(%(25)?3a|\x3a)/i" 
-Line 3981 pcre:
-"/(%(25)?24|\x24)(%(25)?7b|\x7b)lower(%(25)?3a|\x3a)/i" 
-Line 3983 pcre:
-"/(%(25)?24|\x24)(%(25)?7b|\x7b)upper(%(25)?3a|\x3a)/i" 
-Line 3985 pcre:
-"/(%(25)?24|\x24)(%(25)?7b|\x7b)jndi(%(25)?3a|\x3a)/i" 
-Line 3986 pcre:
-"/(%(25)?24|\x24)(%(25)?7b|\x7b)lower(%(25)?3a|\x3a)/i" 
-Line 3987 pcre:
-"/(%(25)?24|\x24)(%(25)?7b|\x7b)upper(%(25)?3a|\x3a)/i" 
-Line 3988 pcre:
-"/(%(25)?24|\x24)(%(25)?7b|\x7b)jndi(%(25)?3a|\x3a)/i" 
-Line 3989 pcre:
-"/(%(25)?24|\x24)(%(25)?7b|\x7b)upper(%(25)?3a|\x3a)/i" 
-Line 3990 pcre:
-"/(%(25)?24|\x24)(%(25)?7b|\x7b)lower(%(25)?3a|\x3a)/i" 
+Line 3978 pcre:"/(%(25)?24|\x24)(%(25)?7b|\x7b)jndi(%(25)?3a|\x3a)/i" 
+Line 3982 pcre:"/(%(25)?24|\x24)(%(25)?7b|\x7b)lower(%(25)?3a|\x3a)/i" 
+Line 3984 pcre:"/(%(25)?24|\x24)(%(25)?7b|\x7b)upper(%(25)?3a|\x3a)/i" 
+Line 3986 pcre:"/(%(25)?24|\x24)(%(25)?7b|\x7b)jndi(%(25)?3a|\x3a)/i" 
+Line 3987 pcre:"/(%(25)?24|\x24)(%(25)?7b|\x7b)lower(%(25)?3a|\x3a)/i" 
+Line 3988 pcre:"/(%(25)?24|\x24)(%(25)?7b|\x7b)upper(%(25)?3a|\x3a)/i" 
+Line 3989 pcre:"/(%(25)?24|\x24)(%(25)?7b|\x7b)jndi(%(25)?3a|\x3a)/i" 
+Line 3990 pcre:"/(%(25)?24|\x24)(%(25)?7b|\x7b)upper(%(25)?3a|\x3a)/i" 
+Line 3991 pcre:"/(%(25)?24|\x24)(%(25)?7b|\x7b)lower(%(25)?3a|\x3a)/i" 
 """
 
 def generate_rand():

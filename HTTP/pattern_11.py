@@ -4,12 +4,9 @@ import string
 import math
 
 """
-Line 2990 pcre:"/\)\r\nHost\x3a\x20[\d\x2e]{7,15}\r\nConnection\x3a\x20Keep\x2dAlive\r\n\r\n$/" 
-Line 3029 pcre:"/\)\r\nHost\x3a\x20[a-z\d\x2e\x2d]{6,32}\r\nCache\x2dControl\x3a\x20no\x2dcache\r\n\r\n$/" 
-Line 2589 pcre:"/\r\nHost\x3a\x20[a-z0-9\x2d\x2e]+\.com\x2d[a-z0-9\x2d\x2e]+(\x3a\d{1,5})?\r\n/i" 
-Line 2696 pcre:"/\)\r\nHost\x3a\x20[a-z0-9\x2d\x2e]+\r\n(Cache\x2dControl|Pragma)\x3a\x20no-cache\r\n\r\n$/" 
+Line 2531 pcre:"/\r\nHost\x3A\s+[^\r\n]*?[bcdfghjklmnpqrstvwxyz]{5,}[^\r\n]*?\x2Einfo\r\n/i" 
+Line 2819 pcre:"/\r\nHost\x3A\s+[^\r\n]*?[bcdfghjklmnpqrstvwxyz]{5,}[^\r\n]*?\x2Ebiz\r\n/i" 
 """
-
 
 def generate_rand():
     return word_gen(3,5,"a-z")

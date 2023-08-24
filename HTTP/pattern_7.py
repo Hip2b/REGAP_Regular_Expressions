@@ -4,16 +4,18 @@ import string
 import math
 
 """
-Line 3469 pcre:"/[?&]host_name=[^&]*?%26/i" 
-Line 3457 pcre:"/[?&]ping_IPAddr=[^&]*?%26/i" 
-Line 3529 pcre:"/[?&]pingAddr=[^&]*?%26/i" 
-Line 3469 pcre:"/[?&]host_name=[^&]*?%26/i" 
-Line 3665 pcre:"/[?&]url=[^&]*?%26/i" 
-Line 3661 pcre:"/[?&]path=[^&]*?%26/i" 
-Line 3621 pcre:"/[?&]SMB(\x5f|%5f)(LOCATION|USERNAME)=[^&]*?%26/i" 
-Line 3616 pcre:"/[?&]ping(\x5f|%5f)ip=[^&]*?%26/i" 
+Line 3438 pcre:"/[?&]arg=[^&]*?%26/i" 
+Line 3458 pcre:"/[?&]ping_IPAddr=[^&]*?%26/i" 
+Line 3470 pcre:"/[?&]host_name=[^&]*?%26/i" 
+Line 3530 pcre:"/[?&]pingAddr=[^&]*?%26/i" 
+Line 3617 pcre:"/[?&]ping(\x5f|%5f)ip=[^&]*?%26/i" 
+Line 3622 pcre:"/[?&]SMB(\x5f|%5f)(LOCATION|USERNAME)=[^&]*?%26/i" 
+Line 3662 pcre:"/[?&]path=[^&]*?%26/i" 
+Line 3666 pcre:"/[?&]url=[^&]*?%26/i" 
+Line 3683 pcre:"/[?&]command(\x5f|%5f)data=[^&]*?%26/i" 
 
-Line 3437 pcre:"/[?&]arg=[^&]*?%26/i" 
+kind of: 
+Line 3607 pcre:"/[?&]ping(\x5f|%5f)(ip|size|times)=[^&]*?%26/i" 
 """
 
 def generate_rand():
