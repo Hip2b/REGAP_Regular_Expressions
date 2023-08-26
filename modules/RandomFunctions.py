@@ -24,7 +24,7 @@ except:
     exit()
     
 """
-def word_gen(min_chars, max_chars = -1, selection = "a-z"):
+def word_gen(selection = "a-z", min_chars = 5, max_chars = -1, ):
     word = ""
     alphabet = ""
     if (max_chars == -1):

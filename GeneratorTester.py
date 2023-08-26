@@ -8,9 +8,10 @@ import sys
 
 patterns = []
 reps = []
+adder = -1
 
 try:
-    opts, args = getopt.getopt(sys.argv[1:], ":", ["pattern=", "lines="])  
+    opts, args = getopt.getopt(sys.argv[1:], ":", ["folder=","pattern=", "lines="])  
 except:
     print("To use this program you need to input files from the command line that you want to run\n",
           "to specify this type --pattern (file name of pattern) to generate a random regular expression and \n",
@@ -26,6 +27,8 @@ for opt, arg in opts:
         patterns.append(str(arg))
     elif opt in ["--lines"]:
         reps.append(int(arg))
+    elif opt in ["--folder"]:
+        adder = arg
     else:
         print("Invalid input on command line")
         exit()
@@ -33,6 +36,10 @@ for opt, arg in opts:
 if (len(reps) != len(patterns)):
      print("Have equal number of line inputs and pattern inputs on commandline")
      exit()
+
+if (adder != -1):
+    for i in range(len(patterns)):
+        patterns[i] = str(adder) + "." + patterns[i]
 
 for num in range(len(patterns)):
     

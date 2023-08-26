@@ -5,6 +5,9 @@ import math
 
 """
 Legitimate examples of regular expressions of this type found in the snort community rules file
+(by the way the line numbers listed here in the smtp folder are one smaller than their actual line numbers 
+in snort3 communtiy.rules, this mistake wasn't made for the http folders or the sql folder but its present in the 
+patterns in smtp)
 #Line 2334 
 filename=[^\n]*\x2eemf
 #Line 2341 
@@ -55,10 +58,7 @@ def regex(rand_var):
     base += rand_var
     
     return base
-"""
-for x in range(100);
-    input(rand_var, x)
-"""
+
 def input(rand_var, error_num):
     content = ""
     error_num = math.fmod(error_num - 1, 2)

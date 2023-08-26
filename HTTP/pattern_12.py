@@ -12,7 +12,7 @@ Line 1853 pcre:"/^Authorization\x3a(\s*|\s*\r?\n\s+)Basic\s+=/ims"
 
 def generate_rand():
     ender = ["=", ""]
-    choices = [ "", word_gen(10, 40, "a-zA-Z0-9")]
+    choices = [ "", word_gen( "a-zA-Z0-9", 10, 40)]
     selection = [r"\s*", r"(\s*|\s*\r?\n\s+)"]
     return [selection[random.randint(0,1)], choices[random.randint(0,1)] + ender[random.randint(0,1)]]
 
@@ -27,7 +27,7 @@ def input(rand_var, error_num):
     content = ""
     error_num = math.fmod(error_num - 1, 3)
     if (error_num == 0):
-        content += word_gen(5, 5, "a-zA-Z")
+        content += word_gen("a-zA-Z", 5)
     content += "Authorization|3A|"
 
     rand = random.randint(0,1)
@@ -37,15 +37,15 @@ def input(rand_var, error_num):
     if (error_num == 1):
         content += "banana"
     
-    content += word_gen(0, 5, "\s")
+    content += word_gen(" ", 0, 5)
     if (rand == 1): 
         if (random.randint(0,1)):
             content += "\r"
-        content += "\n" + word_gen(1, 5, "\s")
+        content += "\n" + word_gen(" ", 1, 5)
 
     content += "Basic"
     if (error_num != 2):
-        content += word_gen(1, 5, "\s")
+        content += word_gen(" ", 1, 5)
     content += rand_var[1]
 
     return content
